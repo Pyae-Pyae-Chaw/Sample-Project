@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/* Header Style */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(35, 35, 35, 0.75),rgb(35, 35, 35, 0.75)), url(images/Pizza1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: rgb(103, 79, 47);
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    width: 350px;
+    height: 30px;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    background-color: khaki;
+    border: 3px dotted white;
+    border-radius: 20px;
+    opacity: 0.85;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 27px -2px rgba(251,190,190,0.75);
+    color: rgb(87, 137, 12);
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    color: aliceblue;
+    top: 50%;
+    right: 5%;
+    text-align: right;
+}
+
+.content h1{
+    font-size: 50px;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+.content p{
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 150px;
+    padding: 10px 0;
+    border: 2px solid #f95;
+    background: transparent;
+    color: aquamarine;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.btn-order{
+    background-color: #f95;
+}
+
+button:hover{
+    background-color: khaki;
+    box-shadow: 0px 0px 27px -2px rgba(251,190,190,0.75);
+}
+
+.btn-order:hover{
+    background: transparent;
+}
+
+/* Content Style */
+.main-content{
+    background-color: bisque;
+    width: 100%;
+}
+
+.main-content h1{
+    text-align: center;
+    padding: 30px 0 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2em;
+}
+
+.main-content hr{
+    width: 10%;
+    border-top: 3px solid black;
+    margin: auto;
+}
+
+.content-section{
+   /* width: 100vw; */
+   height: 600px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /* background-color: bisque; */
+}
+
+.content-section .col{
+    text-align: center;
+    margin: 0 20px;
+}
+
+.pic{
+    border-radius: 80px;
+    width: 150px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.content-section .col h3{
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-family: 'Water Brush', cursive;
+    font-size: 1.5em;
+    font-weight: 1000;
+}
+
+.content-section .col p{
+    font-family:'Libre Bodoni', serif;;
+    font-size: 18px;
+}
+
+/* Footer Section */
+.footer{
+   /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    width: 100vw;
+    background-color: rgb(54, 40, 8);
+    color: #fff;
+    padding: 30px 0;
+    display: flex; 
+    justify-content: center;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.footer div h3{
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.footer .col-1 a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.footer .col-2{
+    flex-grow: 0.5;
+}
+
+form input{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin-bottom: 40px;
+}
+
+form button{
+    width: 200px;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+}
+
+form button:hover{
+    background-color: #f95;
+}
+
+.social-links{
+    margin-top: 30px;
+}
+
+.social-links i{
+    font-size: 25px;
+    margin: 0 10px 0;
+}
+
+.social-links i:hover{
+    color: rgb(226, 142, 63);
+}
+
+.footer-bottom{
+    text-align: center;
+    background-color: rgb(55, 33, 18);
+    color: #fff;
+    padding: 15px 0;
+    opacity: 0.5;
+}
+
+.footer-bottom p{
+    letter-spacing: 0.3px;
+    word-spacing: 0.5px;
+    line-height: 25px;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+}
+
